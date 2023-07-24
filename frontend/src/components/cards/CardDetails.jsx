@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 
-export default function CardList({ /* tempCards, */ onDelete }) {
+export default function CardList({ tempCards, onDelete }) {
   /*   function tryEdit() {
     console.log(cardUl);
   } */
-  let tempCards = [
+ /*  let tempCards = [
     {
       _id: {
         $oid: '64aa79542820975af45bd01e',
@@ -29,7 +29,7 @@ export default function CardList({ /* tempCards, */ onDelete }) {
         'https://www.nonguiltypleasures.com/wp-content/uploads/2023/02/falafel-pita-sandwich-768x1152.jpg',
       __v: 0,
     },
-  ];
+  ]; */
   if (!tempCards) return <section>No data</section>;
   let cardUl = tempCards.map((c, i) => {
     return (
